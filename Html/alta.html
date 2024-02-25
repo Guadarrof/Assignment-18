@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../index.html" class="navbar_logo"></a>
+            <h2>The movie library</h2>
+        </div>
+    </header>
+    <main>
+        <div class="form_container">
+            <form action="submit" onsubmit="" class="form">
+                <div class="form_content">
+                    <h2 class="form_h2">Agregar peliculas</h2>
+                    <label for="titleForm" class="form__label" id="label-title">Titulo</label>
+                    <input type="text" class="form__input" name="title" id="titleForm">
+                    <p class="form_p" id="titleError"></p>
+
+                    <label for="yearForm" class="form__label" id="label-year">Año</label>
+                    <input type="number" class="form__input" name="yearForm" id="yearForm">
+                    <p class="form_p" id="yearError"></p>
+
+                    <label for="descriptForm" class="form__label" id="label-description">Descripcion</label>
+                    <textarea class="form__input" name="description" id="descriptForm"></textarea>
+                    <p class="form_p" id="descriptError"></p>
+                
+                <div class="form_button">
+                    <button class="btn" type="submit" id="btnAddMovie">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../JS/validation.js"></script>
+</body>
+</html>
