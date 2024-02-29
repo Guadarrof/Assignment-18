@@ -47,7 +47,7 @@ function findMovies(movies, searchVal){
         if (movie.title.toLowerCase().includes(searchVal.toLowerCase())){
             movieInfo.innerHTML += `<p class="movie_info"> ${movie.title}</p> <p class="movie_sum">${movie.summary}</p> <br>`;
             }else if(movie.year.includes(searchVal)){
-                movieInfo.innerHTML += `<p class="movie_info">${movie.title} - ${movie.year}</p> <p class="movie_sum"> ${movie.summary}</p> <br>`;
+                movieInfo.innerHTML += `<p class="movie_info">${movie.year} - ${movie.title}</p> <p class="movie_sum"> ${movie.summary}</p> <br>`;
             }
     }
 }
